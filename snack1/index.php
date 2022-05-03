@@ -33,12 +33,16 @@ $basketScore = [
     ]
     ];
 
+
+    
+// Olimpia Milano - Cantù | 55-60
+
+for ($i=0; $i < count($basketScore) ; $i++){
     if(array_key_exists("squadraCasa", $basketScore[0])=== true){
-        echo($basketScore[0]["squadraCasa"]."-".$basketScore[0]["squadraOspite"]." | ".$basketScore[0]["puntiCasa"]."-".$basketScore[0]["puntiOspite"]);
+        echo($basketScore[$i]["squadraCasa"]." - ".$basketScore[$i]["squadraOspite"]." | ".$basketScore[$i]["puntiCasa"]." - ".$basketScore[$i]["puntiOspite"] . "<br>");
     }else{
         echo("not found!");
     }
-    
-// Olimpia Milano - Cantù | 55-60
+}
 
 ?>
